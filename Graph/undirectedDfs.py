@@ -14,4 +14,4 @@ def dfsOfGraph(Graph):
         if i not in vis:
             dfs(s,i)
 
-dfsOfGraph(s)
+dfsOfGraph(p)
