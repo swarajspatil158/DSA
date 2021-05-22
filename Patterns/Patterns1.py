@@ -103,7 +103,7 @@ for i in range(n):
 #         * * * 
 #           * 
 
-print("8")
+print("Eight")
 for i in range(n):
 	for j in range(i,n):
 		print(" ", end = " ")
@@ -120,7 +120,7 @@ for i in range(n):
 #     * * * * * * * 
 #   * * * * * * * * *
 
-print("9")
+print("Nine")
 for i in range(n-1):
 	for j in range(i,n):
 		print(" ", end = " ")
