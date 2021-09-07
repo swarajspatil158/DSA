@@ -9,13 +9,11 @@ class Solution:
         :type n: int
         :rtype: int
         """
-        start,end=0,n-1
-        while (start <=end):
-            mid=start+(end-start)//2
+        start,end=1,n
+        while start <=end:
+            mid=(start+end)//2
             if isBadVersion(mid) == False:
                 start=mid+1
             else:
                 end=mid-1
-                # print(bad)
         return start
-       
