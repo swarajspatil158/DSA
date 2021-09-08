@@ -1,9 +1,8 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        dict = {}
-        for index in range(len(nums)):
-            val2 = target - nums[index]
-            if val2 in dict:
-                return [dict[val2], index]
-            dict[nums[index]] = index
-        
+        hash_map=dict()
+        for i in range(len(nums)):
+            if target-nums[i] in hash_map:
+                return [hash_map[target-nums[i]],i]
+            else:
+                hash_map[nums[i]]=i
